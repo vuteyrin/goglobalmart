@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "MyAppMartExpo",
+    "slug": "MyAppMartExpo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Image/logo.png",
+    "splash": {
+      "image": "./assets/first.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.yourappname",
+      "config": {
+        "googleMapsApiKey": "AIzaSyB9tzuZLCt6mGMWFuyste5sp2z3HRSwQoI"
+      }
+    },
+    "android": {
+      "package": "com.goglobalmart.mart",
+      "googleServicesFile": "./google-services.json",
+      "versionCode": 2,
+      "config":{
+        "googleMaps":{
+          "apiKey": "AIzaSyB9tzuZLCt6mGMWFuyste5sp2z3HRSwQoI"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/path/to/myNotificationIcon.png",
+          "color": "#ffffff",
+          "sounds": ["./local/path/to/mySound.wav", "./local/path/to/myOtherSound.wav"],
+          "mode": "production"
+        }
+      ]
+    ]
+
+  }
+}
